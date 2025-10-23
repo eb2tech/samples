@@ -1,11 +1,11 @@
-using Stocks.Interfaces;
+﻿using Stocks.Interfaces;
 
 namespace Stocks.Grains;
 
 public sealed class StockGrain : Grain, IStockGrain
 {
     // Request api key from here https://www.alphavantage.co/support/#api-key
-    private const string ApiKey = "5NVLFTOEC34MVTDE";
+    private const string ApiKey = "3CH0HKT67LF1YDQF";
     private readonly HttpClient _httpClient = new();
 
     private string _price = null!;
